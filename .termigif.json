@@ -1,0 +1,29 @@
+{
+  "config": {
+    "username": "wd006",
+    "os": "macos",
+    "theme": "dracula",
+    "colors": {
+      "bg_color": "#000000",
+      "output_color": "#fcfcfc",
+      "input_color": "#0cffc1"
+    }
+  },
+  "steps": [
+    {"type": "input", "text": "whoami"},
+    {"type": "output", "text": "Hello! My name is QuBot!"},
+    {"type": "pause", "delay_ms": 1000},
+
+    {"type": "input", "text": "python bot.py"},
+    {"type": "output", "text": "<accent>QuBot: </accent>Hi! How can I help you?"},
+    {"type": "pause", "delay_ms": 800},
+
+    {"type": "input", "text": "curl https://api.wd006.pp.ua/"},
+    {"type": "output", "text": "status: success, code: 200 OK", "color": "#ff00ff"},
+    {"type": "pause", "delay_ms": 2500},
+
+    {"type": "input", "text": "cat author.txt"},
+    {"type": "output", "text": "wd006", "color": "#ffc100"},
+    {"type": "pause", "delay_ms": 1000}
+  ]
+}
